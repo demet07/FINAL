@@ -4,23 +4,29 @@
   box-sizing: border-box;
 }
 
+#pcb {
+  display: inline-block;
+  color: black;
+}
+
 body {
   font-family: "Matangi", sans-serif;
   font-weight: 200;
-  background-color: #ffffff;
+  background-color: #bebebe;
   padding: 20px;
 }
 
 header {
-  margin-bottom: 50px;
+  margin-bottom: 75px;
   position: relative;
+  gap: 400px;
 }
 
 #htmltab {
   margin-bottom: 25px;
   font-size: 50px;
   font-weight: 900;
-  color: #f48804;
+  color: #26ac59;
   display: inline-block;
 }
 
@@ -42,11 +48,11 @@ a {
   color: #000000;
   font-size: 26px;
   font-weight: 700;
-  margin-left: 230px;
+  margin-left: 297px;
 }
 
 #active {
-  color: #f48804;
+  color: #26ac59;
 }
 
 /* cart */
@@ -66,7 +72,7 @@ a {
 
 .cart-count {
   background-color: red;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 12px;
   padding: 2px 6px;
   border-radius: 50%;
@@ -78,17 +84,24 @@ a {
 .products-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 121px;
 }
 
 .product-card {
   width: 300px;
-  border: 1px solid #ffffff;
+  border: 1px solid #888888;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  background-color: #dddbdb;
   margin-left: 55px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  border-color: #26ac59;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .product-image {
@@ -113,7 +126,7 @@ a {
 }
 
 .current-price {
-  color: #f48804;
+  color: #26ac59;
   font-weight: 700;
   font-size: 18px;
   margin-right: 10px;
@@ -126,7 +139,7 @@ a {
 }
 
 .buy-button {
-  background-color: #f48804;
+  background-color: #26ac59;
   color: white;
   border: none;
   padding: 10px;
@@ -177,7 +190,7 @@ a {
 
 /* FOOTER */
 footer {
-  background-color: #f48804;
+  background-color: #26ac59;
   color: white;
   padding: 60px 160px 40px;
   margin-top: 60px;
@@ -205,9 +218,12 @@ footer {
 .footer-logo {
   margin-top: 30px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-logo img {
-  width: 40px;
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
 }
