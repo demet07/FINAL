@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pcb {
+  display: inline-block;
+  color: black;
+}
+
+body {
+  font-family: "Matangi", sans-serif;
+  font-weight: 200;
+  background-color: #bebebe;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 75px;
+  position: relative;
+  gap: 400px;
+}
+
+#htmltab {
+  margin-bottom: 25px;
+  font-size: 50px;
+  font-weight: 900;
+  color: #26ac59;
+  display: inline-block;
+}
+
+nav {
+  margin-top: 7px;
+  margin-bottom: 70px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+  margin-left: 297px;
+}
+
+#active {
+  color: #26ac59;
+}
+
+/* Log In button replacing cart */
+.login-button-container {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.login-button {
+  background-color: #26ac59;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #000000;
+}
+
+
+/* product cards */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 121px;
+}
+
+.product-card {
+  width: 300px;
+  border: 1px solid #888888;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #dddbdb;
+  margin-left: 55px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  border-color: #26ac59;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-details {
+  padding: 15px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.price {
+  margin-bottom: 10px;
+}
+
+.current-price {
+  color: #26ac59;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 16px;
+}
+
+.buy-button {
+  background-color: #26ac59;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.buy-button:hover {
+  background-color: #000000;
+}
+
+.specs {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.specs li {
+  margin: 5px 0;
+}
