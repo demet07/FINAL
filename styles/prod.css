@@ -188,3 +188,43 @@ footer {
     width: 90%;
   }
 }
+
+
+footer {
+  background-color: #26ac59;
+  color: white;
+  padding: 60px 160px 40px;
+  margin-top: 60px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-columns div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-columns div p {
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-logo {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}

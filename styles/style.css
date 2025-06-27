@@ -49,7 +49,40 @@ a {
   color: #26ac59;
 }
 
-/* Log In button replacing cart */
+/* Search bar styles */
+.search-container {
+  position: absolute;
+  top: 30px;
+  right: 160px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 180px;
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #26ac59;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #000000;
+}
+
+/* Log In button */
 .login-button-container {
   position: absolute;
   top: 30px;
