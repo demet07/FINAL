@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-#pcb {
-  display: inline-block;
-  color: black;
-}
-
 body {
   font-family: "Matangi", sans-serif;
   font-weight: 200;
@@ -16,10 +11,10 @@ body {
   padding: 20px;
 }
 
+/* Header styles */
 header {
   margin-bottom: 75px;
   position: relative;
-  gap: 400px;
 }
 
 #htmltab {
@@ -28,6 +23,11 @@ header {
   font-weight: 900;
   color: #26ac59;
   display: inline-block;
+}
+
+#pcb {
+  display: inline;
+  color: black;
 }
 
 nav {
@@ -49,7 +49,7 @@ a {
   color: #26ac59;
 }
 
-/* Log In button replacing cart */
+/* Log In button */
 .login-button-container {
   position: absolute;
   top: 30px;
@@ -72,12 +72,12 @@ a {
   background-color: #000000;
 }
 
-
-/* product cards */
+/* Product layout */
 .products-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 121px;
+  gap: 40px;
+  justify-content: center;
 }
 
 .product-card {
@@ -87,7 +87,6 @@ a {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: #dddbdb;
-  margin-left: 55px;
   transition: all 0.3s ease;
 }
 
@@ -100,7 +99,6 @@ a {
 .product-image {
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .product-details {
@@ -157,4 +155,36 @@ a {
 
 .specs li {
   margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.footer-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .product-card {
+    width: 90%;
+  }
 }
