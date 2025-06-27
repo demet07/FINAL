@@ -252,3 +252,61 @@ footer {
   height: auto;
   border-radius: 8px;
 }
+
+
+/* Wrapper for top-right controls */
+.top-right-controls {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 180px;
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #26ac59;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #000000;
+}
+
+/* Login button (reuses your style) */
+.login-button {
+  background-color: #26ac59;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #000000;
+}
