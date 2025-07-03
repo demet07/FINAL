@@ -4,59 +4,69 @@
   box-sizing: border-box;
 }
 
-#pcb {
-  display: inline-block;
-  color: black;
-}
-
 body {
   font-family: "Matangi", sans-serif;
-  font-weight: 200;
   background-color: #bebebe;
   padding: 20px;
 }
 
+/* Header styles */
 header {
+  background-color: #f3f3f3;
+  padding: 20px 60px;
   margin-bottom: 75px;
-  position: relative;
-  gap: 400px;
+  border-radius: 12px;
 }
 
-#htmltab {
-  margin-bottom: 25px;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.logo h2 {
   font-size: 50px;
   font-weight: 900;
   color: #26ac59;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
-nav {
-  margin-top: 7px;
-  margin-bottom: 70px;
-  display: inline-block;
-  vertical-align: top;
+#pcb {
+  color: black;
+  margin-right: 4px;
 }
 
-a {
+.nav-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-links a {
   text-decoration: none;
-  color: #000000;
-  font-size: 26px;
+  color: #000;
+  font-size: 20px;
   font-weight: 700;
-  margin-left: 297px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #26ac59;
 }
 
 #active {
   color: #26ac59;
 }
 
-/* Search bar styles */
-.search-container {
-  position: absolute;
-  top: 30px;
-  right: 160px;
+.header-controls {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 20px;
 }
 
 .search-input {
@@ -82,13 +92,6 @@ a {
   background-color: #000000;
 }
 
-/* Log In button */
-.login-button-container {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-}
-
 .login-button {
   background-color: #26ac59;
   color: white;
@@ -105,11 +108,12 @@ a {
   background-color: #000000;
 }
 
-/* product cards */
+/* Product cards */
 .products-container {
   display: flex;
   flex-wrap: wrap;
   gap: 121px;
+  justify-content: center;
 }
 
 .product-card {
@@ -119,7 +123,6 @@ a {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: #dddbdb;
-  margin-left: 55px;
   transition: all 0.3s ease;
 }
 
@@ -191,29 +194,60 @@ a {
   margin: 5px 0;
 }
 
-/* sponsor images */
-.image-boxes {
+/* Contact Info Section */
+.contact-info {
+  text-align: center;
+  background-color: #e8e8e8;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-radius: 12px;
+}
+
+.contact-info h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #26ac59;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #333;
+}
+
+.contact-info a {
+  color: #26ac59;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Sponsor Logos */
+.sponsor-logos {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin: 60px auto 40px;
+  align-items: center;
+  gap: 40px;
+  margin: 40px auto;
   flex-wrap: wrap;
 }
 
-.image-boxes img {
-  width: 300px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.sponsor-logos img {
+  width: 120px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
-.image-boxes img:hover {
+.sponsor-logos img:hover {
   transform: scale(1.05);
 }
 
-/* footer */
+/* Footer */
 footer {
   background-color: #26ac59;
   color: white;
@@ -251,62 +285,4 @@ footer {
   width: 80px;
   height: auto;
   border-radius: 8px;
-}
-
-
-/* Wrapper for top-right controls */
-.top-right-controls {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-/* Search bar */
-.search-container {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.search-input {
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  width: 180px;
-}
-
-.search-button {
-  padding: 8px 12px;
-  background-color: #26ac59;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.search-button:hover {
-  background-color: #000000;
-}
-
-/* Login button (reuses your style) */
-.login-button {
-  background-color: #26ac59;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-}
-
-.login-button:hover {
-  background-color: #000000;
 }

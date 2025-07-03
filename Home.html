@@ -9,35 +9,31 @@
 <body>
 
   <!-- header -->
- <header>
-  <h2 id="htmltab">
-    <p>
-      <p id="pcb">PC</p>
-      B
-    </p>
-  </h2>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h2 id="htmltab"><span id="pcb">PC</span>B</h2>
+      </div>
 
-  <nav>
-    <a href="#" id="active">Home</a>
-    <a href="./produqts.html">Product</a>
-    <a href="#">PC Builder</a>
-  </nav>
+      <nav class="nav-links">
+        <a href="./Home.html" id="active">Home</a>
+        <a href="./produqts.html">Product</a>
+        <a href="./picker.html">PC Builder</a>
+      </nav>
 
-  <!-- Top-right corner container -->
-  <div class="top-right-controls">
-    <div class="search-container">
-      <input type="text" placeholder="Search..." class="search-input" />
-      <button class="search-button">🔍</button>
+      <div class="header-controls">
+        <div class="search-container">
+          <input type="text" placeholder="Search..." class="search-input" />
+          <button class="search-button">🔍</button>
+        </div>
+        <button class="login-button">Log In</button>
+      </div>
     </div>
+  </header>
 
-    <div class="login-button-container">
-      <button class="login-button">Log In</button>
-    </div>
-  </div>
-</header>
-
-  <!-- prod cards -->
+  <!-- product cards -->
   <div class="products-container">
+    <!-- Card 1 -->
     <div class="product-card">
       <img class="product-image" src="./IMG/pc2.png" />
       <div class="product-details">
@@ -56,6 +52,7 @@
       </div>
     </div>
 
+    <!-- Card 2 -->
     <div class="product-card">
       <img class="product-image" src="./IMG/pc5.png" />
       <div class="product-details">
@@ -67,13 +64,14 @@
         <button class="buy-button">დამატება</button>
         <ul class="specs">
           <li>🧠 I5 10400F</li>
-          <li>💾 16GB </li>
+          <li>💾 16GB</li>
           <li>🎮 RTX 3060 12GB</li>
           <li>💽 SSD 2TB</li>
         </ul>
       </div>
     </div>
 
+    <!-- Card 3 -->
     <div class="product-card">
       <img class="product-image" src="./IMG/pc2.png" />
       <div class="product-details">
@@ -92,6 +90,7 @@
       </div>
     </div>
 
+    <!-- Card 4 -->
     <div class="product-card">
       <img class="product-image" src="./IMG/pc5.png" />
       <div class="product-details">
@@ -111,15 +110,23 @@
     </div>
   </div>
 
-  <!-- spons images -->
-  <div class="image-boxes">
-    <img src="./IMG/HP.png" alt="Banner 1" />
-    <img src="./IMG/LOGI.png" alt="Banner 2" />
-    <img src="./IMG/evga.png" alt="Banner 3" />
-    <img src="./IMG/xpg.png" alt="Banner 4" />
+  <!-- Contact Info -->
+  <section class="contact-info">
+    <h2>📞 Contact Information</h2>
+    <p>Email: <a href="mailto:PCG@gmail.com">PCG@gmail.com</a></p>
+    <p>Phone: 599-555-555-55</p>
+    <p>Address: 123 Tech Street, Tbilisi, Georgia</p>
+  </section>
+
+  <!-- Sponsor Logos -->
+  <div class="sponsor-logos">
+    <img src="./IMG/HP.png" alt="HP Logo" />
+    <img src="./IMG/LOGI.png" alt="Logitech Logo" />
+    <img src="./IMG/evga.png" alt="EVGA Logo" />
+    <img src="./IMG/xpg.png" alt="XPG Logo" />
   </div>
 
-  <!-- foot -->
+  <!-- Footer -->
   <footer>
     <div class="footer-columns">
       <div>
@@ -147,7 +154,9 @@
     </div>
 
     <div class="footer-logo">
-      <a href="https://tbcbank.ge/ka/tbc-education" ><img src="./IMG/TBC.png" alt="Footer Logo" /></a> 
+      <a href="https://tbcbank.ge/ka/tbc-education">
+        <img src="./IMG/TBC.png" alt="Footer Logo" />
+      </a>
     </div>
   </footer>
 
