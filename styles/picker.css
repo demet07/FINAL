@@ -267,10 +267,11 @@ header {
 
 /* Footer */
 footer {
-  background-color: #26ac59;
-  color: white;
-  padding: 60px 160px 40px;
-  margin-top: 60px;
+     background-color: #26ac59;
+    color: white;
+    padding: 60px 160px 40px;
+    margin-top: 60px;
+    margin: 49px -20px -40px;
 }
 
 .footer-columns {

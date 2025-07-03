@@ -249,11 +249,13 @@ header {
 
 /* Footer */
 footer {
-  background-color: #26ac59;
-  color: white;
-  padding: 60px 160px 40px;
-  margin-top: 60px;
+     background-color: #26ac59;
+    color: white;
+    padding: 60px 160px 40px;
+    margin-top: 60px;
+    margin: 0px -40px -40px;
 }
+
 
 .footer-columns {
   display: flex;
@@ -285,4 +287,13 @@ footer {
   width: 80px;
   height: auto;
   border-radius: 8px;
+}
+
+
+.foter1{
+
+font-family: "Matangi", sans-serif;
+  background-color: #bebebe;
+padding: 20px;
+
 }
